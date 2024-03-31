@@ -8,6 +8,7 @@
     },
     "suggest": {
         "potter/irc-client": "dev-main",
+        "potter/socket-client-interfaces": "dev-main",
         "potter/socket-client": "dev-main",
         "potter/socket-interfaces": "dev-main",
         "potter/socket": "dev-main",
