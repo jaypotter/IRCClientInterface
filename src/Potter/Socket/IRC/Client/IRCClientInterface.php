@@ -22,4 +22,6 @@ interface IRCClientInterface
     public function getHostname(): string;
     public function getServerName(): string;
     public function sendUsername(): void;
+    
+    public function pong(string $token): void;
 }
