@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Potter\Socket\IRC\Client;
+namespace Potter\Resource\IRC;
 
 use \Psr\{EventDispatcher\EventDispatcherInterface, Link\LinkInterface};
 
