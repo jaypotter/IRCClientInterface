@@ -10,15 +10,15 @@ abstract class AbstractIRCClient implements IRCClientInterface
 {
     abstract public function getLink(): LinkInterface;
     
-    abstract public function getPass(): string;
-    abstract public function sendPass(): void;
+    abstract public function getPassword(): string;
+    abstract public function sendPassword(): void;
     
-    abstract public function getNick(): string;
-    abstract public function sendNick(): void;
+    abstract public function getNickname(): string;
+    abstract public function sendNickname(): void;
     
-    abstract public function getUser(): string;
+    abstract public function getUsername(): string;
     abstract public function getRealName(): string;
-    abstract public function getHostName(): string;
-    abstract public function getServer(): string;
-    abstract public function sendUser(): void;
+    abstract public function getHostname(): string;
+    abstract public function getServerName(): string;
+    abstract public function sendUsername(): void;
 }
