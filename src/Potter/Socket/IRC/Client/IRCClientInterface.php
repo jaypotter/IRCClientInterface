@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Potter\Socket\IRC\Client;
 
-use \Psr\Link\LinkInterface;
+use \Psr\{EventDispatcher\EventDispatcherInterface, Link\LinkInterface};
 
 interface IRCClientInterface
 {
+    public function getEventDispatcher(): EventDispatcherInterface;
     public function getLink(): LinkInterface;
     
     public function getPassword(): string;

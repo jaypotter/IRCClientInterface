@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Potter\Socket\IRC\Client;
 
-use \Psr\Link\LinkInterface;
+use \Psr\{EventDispatcher\EventDispatcherInterface, Link\LinkInterface};
 
 abstract class AbstractIRCClient implements IRCClientInterface
 {
+    abstract public function getEventDispatcher(): EventDispatcherInterface;
     abstract public function getLink(): LinkInterface;
     
     abstract public function getPassword(): string;
