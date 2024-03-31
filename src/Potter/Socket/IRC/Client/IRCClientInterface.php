@@ -10,15 +10,15 @@ interface IRCClientInterface
 {
     public function getLink(): LinkInterface;
     
-    public function getPass(): string;
-    public function sendPass(): void;
+    public function getPassword(): string;
+    public function sendPassword(): void;
     
-    public function getNick(): string;
-    public function sendNick(): void;
+    public function getNickname(): string;
+    public function sendNickname(): void;
     
-    public function getUser(): string;
+    public function getUsername(): string;
     public function getRealName(): string;
-    public function getHostName(): string;
-    public function getServer(): string;
-    public function sendUser(): void;
+    public function getHostname(): string;
+    public function getServerName(): string;
+    public function sendUsername(): void;
 }
