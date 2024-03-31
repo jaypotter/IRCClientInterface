@@ -22,6 +22,10 @@ interface IRCClientInterface
     public function getHostname(): string;
     public function getServerName(): string;
     public function sendUsername(): void;
-    
+        
     public function pong(string $token): void;
+    
+    public function getLastPrivateMessage(): string;
+    public function getLastPrivateMessageSender(): string;
+    public function receivePrivateMessage(string $sender, string $message): void;
 }
