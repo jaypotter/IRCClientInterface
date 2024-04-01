@@ -24,7 +24,12 @@ interface IRCClientInterface
     public function sendUsername(): void;
         
     public function handleConnection(): void;
+    
+    public function getLastIRCMessage(): string;
     public function handleMessage(): void;
+    
+    public function getMessageOfTheDay(): string;
+    public function handleMessageOfTheDay(): void;
     
     public function pong(string $token): void;
     public function handlePing(): void;
