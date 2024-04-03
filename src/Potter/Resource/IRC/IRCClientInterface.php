@@ -28,13 +28,15 @@ interface IRCClientInterface
     public function getLastIRCMessage(): string;
     public function handleMessage(): void;
     
+    public function getLastServerMessageNumber(): int;
+    public function handleServerMessage(): void;
+    
     public function getMessageOfTheDay(): string;
     public function handleMessageOfTheDay(): void;
     
     public function pong(string $token): void;
     public function handlePing(): void;
 
-    public function getLastPrivateMessage(): string;
     public function getLastPrivateMessageSender(): string;
     public function handlePrivateMessage(): void;
 }
