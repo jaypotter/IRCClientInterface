@@ -28,13 +28,15 @@ abstract class AbstractIRCClient implements IRCClientInterface
     abstract public function getLastIRCMessage(): string;
     abstract public function handleMessage(): void;
     
+    abstract public function getLastServerMessageNumber(): int;
+    abstract public function handleServerMessage(): void;
+    
     abstract public function getMessageOfTheDay(): string;
     abstract public function handleMessageOfTheDay(): void;
     
     abstract public function pong(string $token): void;
     abstract public function handlePing(): void;
     
-    abstract public function getLastPrivateMessage(): string;
     abstract public function getLastPrivateMessageSender(): string;
     abstract public function handlePrivateMessage(): void;
 }
